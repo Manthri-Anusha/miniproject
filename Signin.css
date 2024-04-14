@@ -1,0 +1,86 @@
+.sign-in-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    margin-top: 50px;
+    margin-bottom: 0.5px;
+  }
+  
+  .login-heading {
+    margin: 0;
+    margin-top: 1%;
+    margin-bottom: 0px;
+  }
+  
+  .sign-in-card {
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Align the card horizontally to the center */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(77, 79, 224, 0.1);
+    background-color: rgba(205, 223, 217, 0.5); /* Aqua color with 50% opacity */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add some space between the label and the input field */
+  }
+  
+  .input-field,
+  .login-button {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #45a049;
+  }
+  
+  .forgot-password-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+    color: #2730b3; /* Link color */
+    text-decoration: none;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  .create-account-card{
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Align the card horizontally to the center */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(77, 79, 224, 0.1);
+    background-size: cover;
+    background-color: rgba(205, 223, 217, 0.5); /* Aqua color with 50% opacity */
+  }

@@ -1,0 +1,37 @@
+/* Resets and base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: auto; /* Allows the page to scroll */
+}
+
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the site fills at least the whole viewport height */
+}
+
+.Site-content {
+  flex: 1; /* Allows content to expand */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enables scrolling within the site content if necessary */
+  position: relative; /* Needed for the pseudo-element positioning */
+  background-image: url('./bg1.jpeg'); /* Apply the background image here */
+  background-size: cover;
+  background-position: center;
+  z-index: 0; /* Ensure the background is below the content */
+  margin-bottom: 4rem;
+}
+
+.Site-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Apply a dark overlay to dull the background */
+  z-index: -1; /* Keeps the overlay below the content */
+  pointer-events: none; /* Allows clicks to pass through */
+}
