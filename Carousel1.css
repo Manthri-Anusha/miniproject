@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.Carousel {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto; /* Centralized horizontally with added space from the top */
+    position: relative;
+    overflow: hidden;
+}
+
+.Carousel_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Carousel_card {
+    display: none;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 30px; /* Increased border-radius for more rounded corners */
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.15);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.Carousel_card-active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    transform: scale(1);
+}
+
+.Card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Card_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    padding: 40px 30px;
+    align-items: flex-end;
+}
+
+.Card_title {
+    color: white;
+    font-size: 30px;
+}
+
+.Carousel_arrow_left,
+.Carousel_arrow_right {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    cursor: pointer;
+}
+
+.Carousel_arrow_right {
+    right: 0px;
+}
+
+.Carousel_pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+}
+
+.pagination_dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pagination_dot:hover {
+    transform: scale(1.2);
+}
+
+.pagination_dot-active {
+    background-color: steelblue;
+}
